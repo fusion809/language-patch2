@@ -5,35 +5,35 @@
 ]
 'patterns': [
     {
-        'match': '(^Index:\s.+)'
+        'match': '^Index:\s.'
         'name': 'patch.index'
     }
     {
-        'match': '(^#.+)'
+        'match': '^#.'
         'name': 'patch.comment'
     }
     {
-        'match': '(^={4,})'
+        'match': '^={4,}'
         'name': 'patch.divider'
     }
     {
-        'match': '(^@{2}\s*-\d+,\s*\d+\s*\+\d+,\d+\s*@{2}$)'
+        'match': '^\@{2}\s*-\d+,\s*\d+\s*\+\d+,\d+\s*\@{2}$'
         'name': 'patch.linedetails'
     }
     {
-        'match': '(^\+{3}\s.+$)'
+        'match': '^\+{3}\s+.'
         'name': 'patch.addition.file'
     }
     {
-        'match': '(^-{3}\s.+$)'
+        'match': '^-{3}\s+.'
         'name': 'patch.removal.file'
     }
     {
-        'match': '(^\+\s+.+$)'
+        'match': '^\+\s+.'
         'name': 'patch.addition.line'
     }
     {
-        'match': '(^-\s+.+$)'
+        'match': '^-\s+.'
         'name': 'patch.removal.line'
     }
 ]

@@ -1,0 +1,19 @@
+'.source.patch':
+    'LineDetails':
+        'prefix': 'ld'
+        'body': '@@ -${line1},${column1} +${line2},${column2} @@'
+    'Comment':
+        'prefix': 'cm'
+        'body': '# ${content}'
+    'FileAddition':
+        'prefix': 'fa'
+        'body': '+++ ${filePath} (${revision})'
+    'FileDeletion':
+        'prefix': 'fd'
+        'body': '--- ${filePath} (${revision})'
+    'LineAddition':
+        'prefix': 'la'
+        'body': '+ ${content}'
+    'LineDeletion':
+        'prefix': 'ld'
+        'body': '- ${content}'
