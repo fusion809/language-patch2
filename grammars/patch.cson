@@ -5,35 +5,109 @@
 ]
 'patterns': [
     {
-        'match': '^Index:\s.'
-        'name': 'patch.index'
+        'begin': '^([\\s]+)?(?=#)'
+        'beginCaptures':
+            '1':
+                'name': 'punctuation.whitespace.comment.leading.patch'
+        'end': '(?!\\G)'
+        'patterns': [
+            {
+                'begin': '#'
+                'beginCaptures':
+                    '0':
+                        'name': 'comment.line.number-sign.patch'
+                'end': '\\n'
+                'name': 'comment.line.number-sign.patch'
+            }
+        ]
     }
     {
-        'match': '^#.'
-        'name': 'patch.comment'
+        'begin': '^([\\s]+)?(@{2})[\\s]*(-?[\\d]+,[\\s]?[\\d]+)[\\s]*(\\+?[\\d]+,[\\s]?[\\d]+)[\\s]*(@{2})'
+        'beginCaptures':
+            '1':
+                'name': 'punctuation.whitespace.comment.leading.patch'
+            '2':
+                'name': 'punctuation.definition.comment.patch'
+            '3':
+                'name': 'string.regexp.patch'
+            '4':
+                'name': 'string.quoted.patch'
+            '5':
+                'name': 'punctuation.definition.comment.patch'
+        'end': '\\n'
     }
     {
-        'match': '^={4,}'
-        'name': 'patch.divider'
+        'begin': '^([\\s]+)?(?=#)'
+        'beginCaptures':
+            '1':
+                'name': 'punctuation.whitespace.comment.leading.patch'
+        'end': '(?!\\G)'
+        'patterns': [
+            {
+                'begin': '#'
+                'beginCaptures':
+                    '0':
+                        'name': 'punctuation.definition.comment.patch'
+                'end': '\\n'
+                'name': 'comment.line.character.patch'
+            }
+        ]
     }
     {
-        'match': '^\@{2}\s*-\d+,\s*\d+\s*\+\d+,\d+\s*\@{2}$'
-        'name': 'patch.linedetails'
+        'begin': '^(\\\+{3})(.*)'
+        'beginCaptures':
+            '1':
+                'name': 'invalid.deprecated.file.addition.patch'
+            '2':
+                'name': 'string.quoted.patch'
+        'end': '\\n'
+        'name': 'keyword.operator.file.addition.patch'
     }
     {
-        'match': '^\+{3}\s+.'
-        'name': 'patch.addition.file'
+        'begin': '^(\\\+)(.*)'
+        'beginCaptures':
+            '1':
+                'name': 'invalid.deprecated.line.addition.patch'
+            '2':
+                'name': 'string.quoted.patch'
+        'end': '\\n'
+        'name': 'keyword.operator.line.addition.patch'
     }
     {
-        'match': '^-{3}\s+.'
-        'name': 'patch.removal.file'
+        'begin': '^(-{3})(.*)'
+        'beginCaptures':
+            '1':
+                'name': 'invalid.illegal.file.subtraction.patch'
+            '2':
+                'name': 'string.regexp.patch'
+        'end': '\\n'
+        'name': 'keyword.operator.file.subtraction.patch'
     }
     {
-        'match': '^\+\s+.'
-        'name': 'patch.addition.line'
+        'begin': '^(-)(.*)'
+        'beginCaptures':
+            '1':
+                'name': 'invalid.illegal.line.subtraction.patch'
+            '2':
+                'name': 'string.regexp.patch'
+        'end': '\\n'
+        'name': 'keyword.operator.line.subtraction.patch'
     }
     {
-        'match': '^-\s+.'
-        'name': 'patch.removal.line'
+        'begin': '^([\\s]+)?(?=)'
+        'beginCaptures':
+            '1':
+                'name': 'punctuation.whitespace.comment.leading.patch'
+        'end': '(?!\\G)'
+        'patterns': [
+            {
+                'begin': '='
+                'beginCaptures':
+                    '0':
+                        'name': 'comment.block.patch'
+                'end': '\\n'
+                'name': 'comment.block.patch'
+            }
+        ]
     }
 ]
