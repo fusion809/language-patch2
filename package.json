@@ -1,9 +1,8 @@
 {
   "name": "language-patch",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Patch file highlighting support in Atom",
-  "keywords": [
-  ],
+  "keywords": [],
   "homepage": "https://github.com/hexpunK/language-patch",
   "repository": {
     "type": "git",
@@ -16,8 +15,7 @@
   "engines": {
     "atom": ">=1.0.0"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "coffeelint": "^1.10.1"
   }
