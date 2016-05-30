@@ -1,22 +1,26 @@
 {
-  "name": "language-patch",
+  "name": "language-patch2",
   "version": "0.1.0",
+  "readme": "./README.md",
   "description": "Patch file highlighting support in Atom",
-  "keywords": [],
-  "homepage": "https://github.com/hexpunK/language-patch",
+  "keywords": [
+    "patch"
+  ],
+  "homepage": "https://github.com/fusion809/language-patch",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hexpunK/language-patch.git"
+    "url": "https://github.com/fusion809/language-patch.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hexpunK/language-patch/issues"
+    "url": "https://github.com/fusion809/language-patch/issues"
   },
   "engines": {
     "atom": ">=1.0.0"
   },
   "dependencies": {},
   "devDependencies": {
-    "coffeelint": "^1.10.1"
+    "coffeelint": "^1.10.1",
+    "coffee-script": "^1.8.0"
   }
 }
