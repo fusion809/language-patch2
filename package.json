@@ -1,7 +1,7 @@
 {
   "name": "language-patch2",
   "version": "0.1.1",
-  "author": "Brenton Horne <brentonhorne77@gmail.com>",
+  "author": "Brenton Horne <brentonhorne77@gmail.com>, Jordan Woerner",
   "readme": "./README.md",
   "description": "Patch file highlighting support in Atom",
   "keywords": [
