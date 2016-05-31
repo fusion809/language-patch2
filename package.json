@@ -1,6 +1,6 @@
 {
   "name": "language-patch",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Patch file highlighting support in Atom",
   "author": "Jordan Woerner <jordanw2004@gmail.com>",
   "keywords": [
