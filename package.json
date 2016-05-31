@@ -17,7 +17,8 @@
     "url": "https://github.com/hexpunK/language-patch/issues"
   },
   "engines": {
-    "atom": ">=1.0.0"
+    "atom": "*",
+    "node": "*"
   },
   "dependencies": {},
   "devDependencies": {
