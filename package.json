@@ -1,9 +1,12 @@
 {
   "name": "language-patch",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Patch file highlighting support in Atom",
   "author": "Jordan Woerner <jordanw2004@gmail.com>",
-  "keywords": ["patch", "diff"],
+  "keywords": [
+    "patch",
+    "diff"
+  ],
   "homepage": "https://github.com/hexpunK/language-patch",
   "repository": {
     "type": "git",
