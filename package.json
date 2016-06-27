@@ -2,7 +2,7 @@
   "name": "language-patch2",
   "version": "0.1.3",
   "author": "Brenton Horne <brentonhorne77@gmail.com>, Jordan Woerner",
-  "readme": "./README.md",
+  "readmeFileName": "README.md",
   "description": "Patch file highlighting support in Atom",
   "keywords": [
     "patch"
@@ -13,13 +13,13 @@
     "url": "https://github.com/fusion809/language-patch2.git"
   },
   "license": "MIT",
+  "licenseFilename": "LICENSE.md",
   "bugs": {
     "url": "https://github.com/fusion809/language-patch2/issues"
   },
   "engines": {
     "atom": ">=1.0.0"
   },
-  "dependencies": {},
   "devDependencies": {
     "coffeelint": "^1.10.1",
     "coffee-script": "^1.8.0"
