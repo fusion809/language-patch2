@@ -1,11 +1,19 @@
 {
   "name": "language-patch2",
   "version": "0.2.0",
-  "author": "Brenton Horne <brentonhorne77@gmail.com>, Jordan Woerner",
+  "author": "Jordan Woerner <jordanw2004@gmail.com>",
+  "contributor": [
+    {
+      "name": "Brenton Horne",
+      "email": "brentonhorne77@gmail.com",
+      "url": "https://fusion809.github.io"
+    }
+  ],
   "readmeFileName": "README.md",
   "description": "Patch file highlighting support in Atom",
   "keywords": [
-    "patch"
+    "patch",
+    "diff"
   ],
   "homepage": "https://github.com/fusion809/language-patch2",
   "repository": {
@@ -18,7 +26,8 @@
     "url": "https://github.com/fusion809/language-patch2/issues"
   },
   "engines": {
-    "atom": ">=1.0.0"
+    "atom": ">=1.0.0",
+    "node": "*"
   },
   "devDependencies": {
     "coffeelint": "^1.10.1",
